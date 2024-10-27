@@ -1,0 +1,12 @@
+<div *ngIf="soundtracks.length>0" class="mt-4">
+    <h3>Soundtracks fopr {{movieName}}</h3>
+    <div *ngFor="let soundtrack of soundtracks">
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5>{{soundtrack.strAlbum}}</h5>
+                <p>Artist: {{soundtrack.strArtist }}</p>
+                <img [src]="soundtrack.strAlbumThumb" alt="{{soundtrack.strAlmbum}}" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+</div>
